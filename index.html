@@ -11,7 +11,7 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/gh/darkroomengineering/lenis@latest/bundled/lenis.js"></script>
+    
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -73,11 +73,6 @@
         }
     </script>
     <style>
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             font-family: 'Manrope', sans-serif;
             background-color: #F1F6F9;
@@ -1038,41 +1033,6 @@
             successMsg.classList.add('hidden');
             form.classList.remove('hidden');
         }
-    </script>
-    <script>
-        // Initialize Lenis for smooth scrolling
-        const lenis = new Lenis({
-            duration: 1.2,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            direction: 'vertical',
-            gestureDirection: 'vertical',
-            smooth: true,
-            mouseMultiplier: 1,
-            smoothTouch: false,
-            touchMultiplier: 2,
-            infinite: false,
-        });
-
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-
-        requestAnimationFrame(raf);
-
-        // Handle smooth scrolling for all anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        lenis.scrollTo(target);
-                    }
-                }
-            });
-        });
     </script>
 </body>
 
