@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" type="image/png" href="favicon.png">
     <title>Jason H. Grice | Creator of SHIFT & Leadership Speaker</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
@@ -18,9 +19,9 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#E1B0FE",
-                        "primary-dim": "#c782f0",
-                        "primary-light": "#f3d8ff",
+                        "primary": "#B9A619",
+                        "primary-dim": "#a09015",
+                        "primary-light": "#d4c130",
                         "surface-bg": "#F1F6F9",
                         "surface-light": "#ffffff",
                         "text-main": "#2d3748",
@@ -56,8 +57,8 @@
                             '100%': { opacity: '1', transform: 'translateY(0)' },
                         },
                         glowPulse: {
-                            '0%, 100%': { filter: 'drop-shadow(0 4px 10px rgba(225,176,254,0.3))' },
-                            '50%': { filter: 'drop-shadow(0 8px 25px rgba(225,176,254,0.6))' },
+                            '0%, 100%': { filter: 'drop-shadow(0 4px 10px rgba(185,166,25,0.3))' },
+                            '50%': { filter: 'drop-shadow(0 8px 25px rgba(185,166,25,0.6))' },
                         },
                         marqueeLeft: {
                             '0%': { transform: 'translateX(0)' },
@@ -93,7 +94,7 @@
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(225, 176, 254, 0.4);
+            border: 1px solid rgba(185, 166, 25, 0.4);
             box-shadow: 0 8px 30px rgba(45, 55, 72, 0.08);
         }
 
@@ -102,7 +103,7 @@
         }
 
         .text-glow {
-            color: #E1B0FE;
+            color: #B9A619;
         }
 
         /* Hide scrollbar for slider */
@@ -123,29 +124,38 @@
         .hover\:pause-animation:hover {
             animation-play-state: paused;
         }
+
+        /* Smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 
 <body id="top" class="bg-surface-bg selection:bg-primary-light selection:text-text-main overflow-x-hidden">
     <nav
         class="fixed top-0 w-full z-50 bg-[#F1F6F9]/90 backdrop-blur-xl border-b border-primary/40 shadow-[0_4px_30px_rgba(45,55,72,0.05)]">
-        <div class="flex justify-between items-center px-6 md:px-8 py-5 max-w-screen-2xl mx-auto">
-            <a href="#top" class="flex items-center gap-2 transition-transform hover:scale-105 active:scale-95">
-                <img src="logoo.webp" alt="Jason H. Grice Logo" class="h-10 w-auto">
+        <div class="flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 max-w-screen-2xl mx-auto">
+            <a href="#top"
+                class="flex items-center gap-2 transition-transform hover:scale-105 active:scale-95 shrink-0">
+                <img src="logoo.png" alt="Jason H. Grice Logo" class="h-10 sm:h-11 md:h-12 w-auto">
             </a>
 
-            <div class="hidden md:flex items-center gap-12">
-                <a class="text-text-muted hover:text-primary-dim transition-all duration-300 font-body text-sm tracking-wide font-medium"
+            <div class="hidden md:flex items-center md:gap-6 lg:gap-12">
+                <a class="text-text-muted hover:text-primary-dim transition-all duration-300 font-body md:text-xs lg:text-sm tracking-wide font-medium"
                     href="#insights">The SHIFT</a>
-                <a class="text-text-muted hover:text-primary-dim transition-all duration-300 font-body text-sm tracking-wide font-medium"
+                <a class="text-text-muted hover:text-primary-dim transition-all duration-300 font-body md:text-xs lg:text-sm tracking-wide font-medium"
                     href="#services">Expertise</a>
-                <a class="text-text-muted hover:text-primary-dim transition-all duration-300 font-body text-sm tracking-wide font-medium"
+                <a class="text-text-muted hover:text-primary-dim transition-all duration-300 font-body md:text-xs lg:text-sm tracking-wide font-medium"
                     href="#about">My Story</a>
-                <a class="text-text-muted hover:text-primary-dim transition-all duration-300 font-body text-sm tracking-wide font-medium"
-                    href="#experience">Experience</a>
+                <a class="text-text-muted hover:text-primary-dim transition-all duration-300 font-body md:text-xs lg:text-sm tracking-wide font-medium"
+                    href="#origin">The Origin</a>
+                <a class="text-text-muted hover:text-primary-dim transition-all duration-300 font-body md:text-xs lg:text-sm tracking-wide font-medium"
+                    href="#keynote">Keynotes</a>
             </div>
+
             <a href="#contact"
-                class="inline-block bg-transparent border-2 border-primary-dim text-primary-dim px-8 py-2.5 rounded-full font-body font-bold transition-standard hover:bg-primary hover:text-text-main hover:border-primary hover:shadow-[0_8px_25px_rgba(225,176,254,0.5)] hover:-translate-y-0.5 active:scale-95 text-center">
+                class="inline-block bg-transparent border-2 border-primary-dim text-primary-dim px-5 py-2 sm:px-6 sm:py-2.5 md:px-8 md:py-2.5 text-sm md:text-base rounded-full font-body font-bold transition-standard hover:bg-primary hover:text-text-main hover:border-primary hover:shadow-[0_8px_25px_rgba(185,166,25,0.5)] hover:-translate-y-0.5 active:scale-95 text-center shrink-0">
                 Connect
             </a>
         </div>
@@ -160,7 +170,7 @@
                     <span class="material-symbols-outlined text-primary-dim text-base">psychology</span>
                     Creator of SHIFT: A Mindset Reset
                 </div>
-                <h1 class="text-5xl md:text-7xl leading-[1.05] text-text-main tracking-tight font-medium"
+                <h1 class="text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-text-main tracking-tight font-medium"
                     style="font-family: 'Roboto', sans-serif;">
                     Retail leaders aren't failing. <span class="text-glow font-bold">They're drowning in
                         pressure.</span>
@@ -171,7 +181,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
                     <a href="#contact"
-                        class="inline-block bg-primary text-text-main px-10 py-4 rounded-full font-bold text-lg shadow-[0_4px_15px_rgba(225,176,254,0.4)] transition-standard hover:shadow-[0_8px_25px_rgba(225,176,254,0.6)] hover:-translate-y-1 active:scale-95 text-center">Partner
+                        class="inline-block bg-primary text-text-main px-10 py-4 rounded-full font-bold text-lg shadow-[0_4px_15px_rgba(185,166,25,0.4)] transition-standard hover:shadow-[0_8px_25px_rgba(185,166,25,0.6)] hover:-translate-y-1 active:scale-95 text-center">Partner
                         With Me</a>
                     <a href="#about"
                         class="inline-block border-2 border-text-main text-text-main px-10 py-4 rounded-full font-bold text-lg hover:border-primary hover:text-primary-dim transition-standard active:scale-95 text-center">Read
@@ -184,10 +194,10 @@
                 <div
                     class="relative z-10 w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(45,55,72,0.15)] ring-4 ring-primary/40 animate-float">
                     <img alt="Jason H. Grice" class="w-full h-full object-cover" src="images/Jason.jpg"
-                        onerror="this.onerror=null; this.src='https://via.placeholder.com/400x500/F1F6F9/E1B0FE?text=Jason+H.+Grice'" />
+                        onerror="this.onerror=null; this.src='https://via.placeholder.com/400x500/F1F6F9/B9A619?text=Jason+H.+Grice'" />
                 </div>
 
-                <div class="absolute z-20 glass-card p-3 sm:p-4 rounded-2xl flex items-center justify-center gap-3 w-max max-w-[90%] h-fit -bottom-6 left-0 right-0 mx-auto md:w-max md:max-w-none md:bottom-auto md:top-1/4 md:right-auto md:-left-12 lg:-left-32 md:mx-0 animate-float"
+                <div class="absolute z-20 glass-card p-3 sm:p-4 rounded-2xl flex items-center justify-center gap-3 w-max max-w-[90%] h-fit -bottom-6 left-0 right-0 mx-auto lg:w-max lg:max-w-none lg:bottom-auto lg:top-1/4 lg:right-auto lg:-left-12 xl:-left-32 lg:mx-0 animate-float"
                     style="animation-delay: 0.5s;">
                     <div
                         class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center shadow-sm shrink-0">
@@ -208,9 +218,9 @@
                 class="absolute inset-0 bg-gradient-to-r from-surface-bg via-transparent to-surface-bg z-0 pointer-events-none">
             </div>
             <div
-                class="max-w-screen-2xl mx-auto px-6 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16 lg:gap-20 opacity-80 hover:opacity-100 transition-standard duration-500 relative z-10">
+                class="max-w-screen-2xl mx-auto px-6 md:px-8 flex flex-col lg:flex-row items-center gap-8 md:gap-16 lg:gap-20 opacity-80 hover:opacity-100 transition-standard duration-500 relative z-10">
 
-                <div class="flex items-center gap-5 shrink-0 md:min-w-[320px]">
+                <div class="flex items-center gap-5 shrink-0 lg:min-w-[320px]">
                     <div
                         class="w-14 h-14 rounded-full border border-primary/60 flex items-center justify-center bg-primary/20 shadow-sm shrink-0">
                         <span class="material-symbols-outlined text-primary-dim text-[28px]"
@@ -226,7 +236,7 @@
                     </div>
 
                     <div
-                        class="hidden md:block w-px h-14 bg-gradient-to-b from-transparent via-primary/50 to-transparent ml-auto">
+                        class="hidden lg:block w-px h-14 bg-gradient-to-b from-transparent via-primary/50 to-transparent ml-auto">
                     </div>
                 </div>
 
@@ -283,12 +293,12 @@
                     <div
                         class="relative z-10 w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(45,55,72,0.15)] ring-4 ring-primary/50 animate-float">
                         <img alt="Jason H. Grice speaking" class="w-full h-full object-cover" src="images/jason1.jfif"
-                            onerror="this.onerror=null; this.src='https://via.placeholder.com/400x500/F1F6F9/E1B0FE?text=Mindset+Reset'" />
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/400x500/F1F6F9/B9A619?text=Mindset+Reset'" />
                         <div class="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-3xl pointer-events-none">
                         </div>
                     </div>
 
-                    <div class="absolute z-20 glass-card p-3 sm:p-4 rounded-2xl flex items-center justify-center gap-3 w-max max-w-[90%] h-fit -bottom-6 left-0 right-0 mx-auto md:w-max md:max-w-none md:bottom-auto md:top-1/4 md:left-auto md:-right-12 lg:-right-28 md:mx-0 animate-float"
+                    <div class="absolute z-20 glass-card p-3 sm:p-4 rounded-2xl flex items-center justify-center gap-3 w-max max-w-[90%] h-fit -bottom-6 left-0 right-0 mx-auto lg:w-max lg:max-w-none lg:bottom-auto lg:top-1/4 lg:left-auto lg:-right-12 xl:-right-28 lg:mx-0 animate-float"
                         style="animation-delay: 0.5s;">
                         <div
                             class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center shadow-sm shrink-0">
@@ -332,11 +342,11 @@
                     stress shapes behavior and how unregulated leaders unintentionally spread it.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-6 md:px-12">
                 <div
-                    class="bg-surface-bg p-8 md:p-10 lg:p-12 rounded-[16px] border border-primary/30 shadow-[0_8px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] hover:border-primary hover:-translate-y-2 transition-all duration-300 ease-out group">
+                    class="bg-surface-bg p-8 md:p-10 lg:p-12 rounded-[16px] border border-primary/30 shadow-[0_8px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(185,166,25,0.25)] hover:border-primary hover:-translate-y-2 transition-all duration-300 ease-out group">
                     <div
-                        class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mb-8 mx-auto md:mx-0 group-hover:bg-primary/40 group-hover:shadow-[0_0_15px_rgba(225,176,254,0.5)] transition-all">
+                        class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mb-8 mx-auto md:mx-0 group-hover:bg-primary/40 group-hover:shadow-[0_0_15px_rgba(185,166,25,0.5)] transition-all">
                         <span class="material-symbols-outlined text-primary-dim text-[28px]"
                             style="font-variation-settings: 'wght' 200">record_voice_over</span>
                     </div>
@@ -349,9 +359,9 @@
                 </div>
 
                 <div
-                    class="bg-surface-bg p-8 md:p-10 lg:p-12 rounded-[16px] border border-primary/30 shadow-[0_8px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] hover:border-primary hover:-translate-y-2 transition-all duration-300 ease-out group">
+                    class="bg-surface-bg p-8 md:p-10 lg:p-12 rounded-[16px] border border-primary/30 shadow-[0_8px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(185,166,25,0.25)] hover:border-primary hover:-translate-y-2 transition-all duration-300 ease-out group">
                     <div
-                        class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mb-8 mx-auto md:mx-0 group-hover:bg-primary/40 group-hover:shadow-[0_0_15px_rgba(225,176,254,0.5)] transition-all">
+                        class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mb-8 mx-auto md:mx-0 group-hover:bg-primary/40 group-hover:shadow-[0_0_15px_rgba(185,166,25,0.5)] transition-all">
                         <span class="material-symbols-outlined text-primary-dim text-[28px]"
                             style="font-variation-settings: 'wght' 200">diversity_3</span>
                     </div>
@@ -364,9 +374,9 @@
                 </div>
 
                 <div
-                    class="bg-surface-bg p-8 md:p-10 lg:p-12 rounded-[16px] border border-primary/30 shadow-[0_8px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] hover:border-primary hover:-translate-y-2 transition-all duration-300 ease-out group">
+                    class="bg-surface-bg p-8 md:p-10 lg:p-12 rounded-[16px] border border-primary/30 shadow-[0_8px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(185,166,25,0.25)] hover:border-primary hover:-translate-y-2 transition-all duration-300 ease-out group">
                     <div
-                        class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mb-8 mx-auto md:mx-0 group-hover:bg-primary/40 group-hover:shadow-[0_0_15px_rgba(225,176,254,0.5)] transition-all">
+                        class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mb-8 mx-auto md:mx-0 group-hover:bg-primary/40 group-hover:shadow-[0_0_15px_rgba(185,166,25,0.5)] transition-all">
                         <span class="material-symbols-outlined text-primary-dim text-[28px]"
                             style="font-variation-settings: 'wght' 200">transform</span>
                     </div>
@@ -379,14 +389,14 @@
             </div>
         </section>
 
-        <section id="services" class="max-w-screen-2xl mx-auto px-6 md:px-12 py-24 relative">
+        <section id="services" class="max-w-screen-2xl mx-auto px-6 md:px-12 py-24 relative border-y border-primary/20">
             <div class="absolute left-0 top-1/2 w-72 h-72 bg-primary/20 blur-[100px] rounded-full -z-10"></div>
             <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
                 <div class="max-w-xl">
                     <span
                         class="text-primary-dim font-bold tracking-[0.2em] uppercase text-[10px] mb-4 block">Methodology</span>
                     <h2 class="text-5xl md:text-6xl font-serif text-text-main leading-tight">Regulate before you
-                        <br /><span class="font-medium text-glow">react.</span>
+                        <span class="font-medium text-glow">react.</span>
                     </h2>
                 </div>
                 <p class="text-text-muted text-lg max-w-xs md:text-right border-r-2 border-primary pr-6">
@@ -396,7 +406,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                 <div
-                    class="group bg-white border border-primary/20 rounded-3xl p-10 flex flex-col justify-between min-h-[440px] shadow-[0_5px_20px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_35px_rgba(225,176,254,0.25)] hover:border-primary transition-all duration-500 hover:-translate-y-3">
+                    class="group bg-white border border-primary/20 rounded-3xl p-10 flex flex-col justify-between min-h-[440px] shadow-[0_5px_20px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_35px_rgba(185,166,25,0.25)] hover:border-primary transition-all duration-500 hover:-translate-y-3">
                     <div>
                         <div
                             class="w-14 h-14 mb-8 flex items-center justify-center rounded-xl bg-gradient-to-br from-primary/50 to-primary/10 transition-all duration-500 group-hover:scale-110">
@@ -410,12 +420,14 @@
                         class="inline-flex mt-8 text-primary-dim font-bold items-center gap-2 group-hover:translate-x-1 transition-all duration-300">
                         Let's talk
                         <span
-                            class="material-symbols-outlined text-xl -rotate-[30deg] translate-y-1 group-hover:translate-x-2 group-hover:translate-y-2">arrow_downward</span>
+                            class="material-symbols-outlined text-xl -rotate-[30deg] translate-y-1 transition-transform duration-300 ease-in-out group-hover:translate-x-2 group-hover:translate-y-2">
+                            arrow_downward
+                        </span>
                     </a>
                 </div>
 
                 <div
-                    class="group bg-white border border-primary/20 rounded-3xl p-10 flex flex-col justify-between min-h-[440px] shadow-[0_5px_20px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_35px_rgba(225,176,254,0.25)] hover:border-primary transition-all duration-500 hover:-translate-y-3">
+                    class="group bg-white border border-primary/20 rounded-3xl p-10 flex flex-col justify-between min-h-[440px] shadow-[0_5px_20px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_35px_rgba(185,166,25,0.25)] hover:border-primary transition-all duration-500 hover:-translate-y-3">
                     <div>
                         <div
                             class="w-14 h-14 mb-8 flex items-center justify-center rounded-xl bg-gradient-to-br from-primary/50 to-primary/10 transition-all duration-500 group-hover:scale-110">
@@ -434,7 +446,7 @@
                 </div>
 
                 <div
-                    class="group bg-white border border-primary/20 rounded-3xl p-10 flex flex-col justify-between min-h-[440px] shadow-[0_5px_20px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_35px_rgba(225,176,254,0.25)] hover:border-primary transition-all duration-500 hover:-translate-y-3">
+                    class="group bg-white border border-primary/20 rounded-3xl p-10 flex flex-col justify-between min-h-[440px] shadow-[0_5px_20px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_35px_rgba(185,166,25,0.25)] hover:border-primary transition-all duration-500 hover:-translate-y-3">
                     <div>
                         <div
                             class="w-14 h-14 mb-8 flex items-center justify-center rounded-xl bg-gradient-to-br from-primary/50 to-primary/10 transition-all duration-500 group-hover:scale-110">
@@ -454,7 +466,7 @@
                 </div>
 
                 <div
-                    class="group bg-white border border-primary/20 rounded-3xl p-10 flex flex-col justify-between min-h-[440px] shadow-[0_5px_20px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_35px_rgba(225,176,254,0.25)] hover:border-primary transition-all duration-500 hover:-translate-y-3">
+                    class="group bg-white border border-primary/20 rounded-3xl p-10 flex flex-col justify-between min-h-[440px] shadow-[0_5px_20px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_35px_rgba(185,166,25,0.25)] hover:border-primary transition-all duration-500 hover:-translate-y-3">
                     <div>
                         <div
                             class="w-14 h-14 mb-8 flex items-center justify-center rounded-xl bg-gradient-to-br from-primary/50 to-primary/10 transition-all duration-500 group-hover:scale-110">
@@ -475,401 +487,77 @@
             </div>
         </section>
 
-        <section class="py-24 relative overflow-hidden bg-white border-y border-primary/20">
-            <div class="absolute inset-0 bg-gradient-to-br from-surface-bg via-transparent to-primary/10 -z-10"></div>
+        <section id="origin" class="max-w-screen-2xl mx-auto px-6 md:px-12 py-24 flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="space-y-6 order-2 lg:order-1 animate-fade-up">
+                <span class="text-primary-dim font-bold uppercase tracking-[0.2em] text-[10px] block">How SHIFT Was Born</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-text-main leading-tight">Built from <span class="text-glow">lived experience.</span></h2>
+                <p class="text-text-muted text-lg leading-relaxed font-body">SHIFT isn’t a textbook theory—it's a mindset reset forged in the trenches of leadership. It’s designed to help mentally exhausted high-performers break free from fear-based cycles and lead with real clarity.</p>
+                
+                <p class="text-text-main font-semibold mt-4">The core truth: Real change doesn’t happen by doing more. It happens by becoming more aware.</p>
 
-            <div class="max-w-screen-2xl mx-auto px-6 md:px-8 mb-16 text-center relative z-10">
-                <span class="text-primary-dim font-bold uppercase tracking-[0.3em] text-[10px]">Testimonials</span>
-                <h2 class="text-4xl md:text-5xl font-serif text-text-main mt-4">What the community is saying</h2>
+                <ul class="space-y-4 pt-4">
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary-dim mt-1">check_circle</span>
+                        <div><strong class="text-text-main">Surrender:</strong> <span class="text-text-muted">Release what no longer serves you.</span></div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary-dim mt-1">check_circle</span>
+                        <div><strong class="text-text-main">Harness:</strong> <span class="text-text-muted">Use past experiences as fuel, not friction.</span></div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary-dim mt-1">check_circle</span>
+                        <div><strong class="text-text-main">Identify:</strong> <span class="text-text-muted">Uncover the beliefs driving your decisions.</span></div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary-dim mt-1">check_circle</span>
+                        <div><strong class="text-text-main">Focus:</strong> <span class="text-text-muted">Direct energy where it actually matters.</span></div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary-dim mt-1">check_circle</span>
+                        <div><strong class="text-text-main">Transform:</strong> <span class="text-text-muted">Create lasting change from the inside out.</span></div>
+                    </li>
+                </ul>
             </div>
-
-            <div class="relative flex overflow-hidden w-full mask-fade-edges pb-6">
-                <div class="flex w-max animate-marquee-right hover:pause-animation">
-                    <div class="flex shrink-0">
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "Jason understands the emotional labor of retail leadership better than anyone. His
-                                SHIFT framework is a total game-changer for stressed managers."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">Retail Executive</p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">District
-                                        Manager</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "He doesn't just teach leadership theory; he addresses the realities of survival mode
-                                and burnout. Exactly what our frontline team needed."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">VP of Human Resources
-                                    </p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Corporate
-                                        Training</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star_half</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "Jason's insights on absorbing pressure without passing it down have completely
-                                transformed how I manage my store and my team's expectations."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">Store Manager</p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Frontline
-                                        Leader</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex shrink-0">
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "Jason understands the emotional labor of retail leadership better than anyone. His
-                                SHIFT framework is a total game-changer for stressed managers."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">Retail Executive</p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">District
-                                        Manager</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "He doesn't just teach leadership theory; he addresses the realities of survival mode
-                                and burnout. Exactly what our frontline team needed."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">VP of Human Resources
-                                    </p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Corporate
-                                        Training</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star_half</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "Jason's insights on absorbing pressure without passing it down have completely
-                                transformed how I manage my store and my team's expectations."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">Store Manager</p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Frontline
-                                        Leader</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="order-1 lg:order-2 w-full animate-fade-up" style="animation-delay: 0.2s;">
+                <div class="relative w-full aspect-video rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(45,55,72,0.15)] ring-4 ring-primary/40 group">
+                    <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/SfPsTpEi3gU" title="Origin Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
+        </section>
 
-            <div class="relative flex overflow-hidden w-full mask-fade-edges pt-4">
-                <div class="flex w-max animate-marquee-left hover:pause-animation">
-                    <div class="flex shrink-0">
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "What really stood out was his strategic mindset. He knows exactly how to identify the
-                                hidden stress factors that cause turnover in big retail."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">Corporate Director
-                                    </p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">
-                                        Operations Leadership</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star_half</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "The SHIFT workshop made me rethink how I handle urgency. Finally, leadership training
-                                that gets the gritty reality of what we face."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">Regional Manager</p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Big Box
-                                        Retail</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star_half</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "He lives and breathes leadership support. His message about moving out of survival mode
-                                resonated with every single leader in our room."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">HR Partner</p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Talent
-                                        Development</p>
-                                </div>
-                            </div>
-                        </div>
+        <section id="keynote" class="bg-white border-y border-primary/20">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12 py-24 flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="w-full animate-fade-up">
+                    <div class="relative w-full aspect-video rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(45,55,72,0.15)] ring-4 ring-primary/40">
+                        <iframe class="w-full h-full absolute inset-0" src="https://www.youtube.com/embed/8AFBt8C8uCw" title="SHIFT- Teaser Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <div class="flex shrink-0">
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "What really stood out was his strategic mindset. He knows exactly how to identify the
-                                hidden stress factors that cause turnover in big retail."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">Corporate Director
-                                    </p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">
-                                        Operations Leadership</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star_half</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "The SHIFT workshop made me rethink how I handle urgency. Finally, leadership training
-                                that gets the gritty reality of what we face."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">Regional Manager</p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Big Box
-                                        Retail</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="w-[300px] sm:w-[350px] md:w-[450px] flex-shrink-0 bg-surface-bg p-6 sm:p-8 rounded-3xl flex flex-col justify-between shadow-[0_10px_30px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_40px_rgba(225,176,254,0.25)] border border-primary/20 hover:border-primary/60 transition-all duration-300 mx-4">
-                            <div class="flex text-primary mb-4 gap-1">
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star</span>
-                                <span class="material-symbols-outlined text-xl"
-                                    style="font-variation-settings: 'FILL' 1;">star_half</span>
-                            </div>
-                            <p class="text-base md:text-lg font-body text-text-muted leading-relaxed mb-8">
-                                "He lives and breathes leadership support. His message about moving out of survival mode
-                                resonated with every single leader in our room."
-                            </p>
-                            <div class="flex items-center gap-4 mt-auto">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center border border-primary/40 shrink-0">
-                                    <span class="material-symbols-outlined text-primary-dim">person</span>
-                                </div>
-                                <div>
-                                    <p class="font-serif text-lg text-text-main leading-none mb-1">HR Partner</p>
-                                    <p class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Talent
-                                        Development</p>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="space-y-6 animate-fade-up" style="animation-delay: 0.2s;">
+                    <span class="text-primary-dim font-bold uppercase tracking-[0.2em] text-[10px] block">Signature Keynote & Workshops</span>
+                    <h2 class="text-4xl md:text-5xl font-serif text-text-main leading-tight">Get your <span class="text-glow">SHIFT together.</span></h2>
+                    <p class="text-text-muted text-lg leading-relaxed font-body">Your team doesn’t need more motivation; they need a mindset reset. From keynotes to deep-dive workshops, I help leaders map their internal patterns, interrupt fear-based cycles, and build long-term resilience.</p>
+                    
+                    <p class="text-text-main font-semibold">What audiences walk away with:</p>
+                    <ul class="space-y-4 pt-2">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary-dim">bolt</span>
+                            <span class="text-text-muted">A clear understanding of internal leadership patterns.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary-dim">bolt</span>
+                            <span class="text-text-muted">Tools they can use immediately to improve decision-making.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary-dim">bolt</span>
+                            <span class="text-text-muted">Reduced mental fatigue and increased confidence.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary-dim">bolt</span>
+                            <span class="text-text-muted">Permission to lead without carrying everything alone.</span>
+                        </li>
+                    </ul>
+                    <div class="pt-6 flex gap-4">
+                        <a href="#contact" class="inline-block bg-primary text-text-main px-8 py-3 rounded-full font-bold transition-standard hover:shadow-[0_8px_25px_rgba(185,166,25,0.6)] hover:-translate-y-1">Book Jason</a>
                     </div>
                 </div>
             </div>
@@ -934,14 +622,14 @@
                                 placeholder="How can we help your team shift?..." rows="3"></textarea>
                         </div>
                         <button id="submitBtn" type="submit"
-                            class="w-full bg-primary text-text-main py-4 rounded-xl font-bold text-lg shadow-[0_4px_15px_rgba(225,176,254,0.4)] hover:shadow-[0_8px_25px_rgba(225,176,254,0.6)] transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2">
+                            class="w-full bg-primary text-text-main py-4 rounded-xl font-bold text-lg shadow-[0_4px_15px_rgba(185,166,25,0.4)] hover:shadow-[0_8px_25px_rgba(185,166,25,0.6)] transition-all hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-2">
                             <span>Send Message</span>
                         </button>
                     </form>
 
                     <div id="successMessage" class="hidden text-center py-8 animate-fade-up w-full">
                         <div
-                            class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-primary-dim shadow-[0_4px_15px_rgba(225,176,254,0.4)]">
+                            class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-primary-dim shadow-[0_4px_15px_rgba(185,166,25,0.4)]">
                             <span class="material-symbols-outlined text-primary-dim text-4xl">check_circle</span>
                         </div>
                         <h3 class="text-3xl font-serif text-text-main mb-3">Message Sent!</h3>
@@ -963,7 +651,7 @@
             class="grid grid-cols-1 md:grid-cols-4 gap-12 px-6 md:px-12 py-16 md:py-20 max-w-screen-2xl mx-auto relative z-10">
             <div class="col-span-1 md:col-span-2 space-y-6">
                 <a href="#top" class="inline-block transition-transform hover:scale-105 active:scale-95">
-                    <img src="logoo.webp" alt="Jason H. Grice Logo" class="h-12 w-auto mb-4">
+                    <img src="logoo.png" alt="Jason H. Grice Logo" class="h-12 w-auto mb-4">
                 </a>
                 <div class="text-3xl font-serif text-text-main">Jason H. Grice</div>
                 <p class="text-text-muted font-body text-sm leading-relaxed max-w-xs">Creator of SHIFT: A Mindset Reset
@@ -973,7 +661,8 @@
                 <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-text-main mb-2">Explore</span>
                 <a class="text-text-muted hover:text-primary-dim transition-all text-sm" href="#insights">The SHIFT</a>
                 <a class="text-text-muted hover:text-primary-dim transition-all text-sm" href="#services">Expertise</a>
-                <a class="text-text-muted hover:text-primary-dim transition-all text-sm" href="#contact">Contact Me</a>
+                <a class="text-text-muted hover:text-primary-dim transition-all text-sm" href="#origin">The Origin</a>
+                <a class="text-text-muted hover:text-primary-dim transition-all text-sm" href="#keynote">Keynotes</a>
             </div>
             <div class="flex flex-col gap-4">
                 <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-text-main mb-2">Connect</span>
@@ -994,6 +683,14 @@
             </div>
         </div>
     </footer>
+
+    <button id="backToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        class="fixed bottom-8 right-8 z-50 opacity-0 pointer-events-none translate-y-10 transition-all duration-500 group">
+        <div
+            class="w-12 h-12 md:w-14 md:h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-[0_4px_15px_rgba(185,166,25,0.5)] hover:bg-primary-dim hover:shadow-[0_8px_25px_rgba(185,166,25,0.6)] animate-[float_4s_ease-in-out_infinite] group-hover:animate-none group-hover:-translate-y-1 transition-all duration-300">
+            <span class="material-symbols-outlined text-2xl md:text-3xl">arrow_upward</span>
+        </div>
+    </button>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function (e) {
@@ -1033,6 +730,18 @@
             successMsg.classList.add('hidden');
             form.classList.remove('hidden');
         }
+
+        // Back to top button visibility toggle
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10');
+                backToTopBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10');
+                backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+            }
+        });
     </script>
 </body>
 
