@@ -13,6 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // DUMMY PUBLIC KEY (Aap ise baad mein replace karenge)
+            emailjs.init({
+                publicKey: "XXoTFOYvMXK0LHcZQ",
+            });
+        })();
+    </script>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -170,14 +179,19 @@
                     <span class="material-symbols-outlined text-primary-dim text-base">psychology</span>
                     Creator of SHIFT: A Mindset Reset
                 </div>
-                <h1 class="text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-text-main tracking-tight font-medium"
+                <h1 class="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[56px] leading-[1.05] text-text-main tracking-tight font-medium"
                     style="font-family: 'Roboto', sans-serif;">
-                    Retail leaders aren't failing. <span class="text-glow font-bold">They're drowning in
-                        pressure.</span>
+                    Retail leadership training usually teaches strategy, <span
+                        class="text-glow font-bold text-[36px] sm:text-[44px] md:text-[54px]">but pressure
+                        doesn’t test strategy, it exposes patterns.</span>
                 </h1>
                 <p class="text-lg md:text-xl text-text-muted font-body max-w-lg leading-relaxed">
-                    I help retail leaders move from survival mode to clarity by addressing what most leadership training
-                    ignores. Your Emotional Support Gorilla 🦍 is here to teach the reset.
+                    I help retail leaders break survival mode, reduce burnout, and lead with clarity when the pressure
+                    is highest.
+
+                    Your Emotional Support Gorilla 🦍 is here to help you <b>Get Your SHIFT Together.</b>
+
+
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
                     <a href="#contact"
@@ -292,7 +306,7 @@
 
                     <div
                         class="relative z-10 w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(45,55,72,0.15)] ring-4 ring-primary/50 animate-float">
-                        <img alt="Jason H. Grice speaking" class="w-full h-full object-cover" src="images/jason1.jfif"
+                        <img alt="Jason H. Grice speaking" class="w-full h-full object-cover" src="images/jason2.png"
                             onerror="this.onerror=null; this.src='https://via.placeholder.com/400x500/F1F6F9/B9A619?text=Mindset+Reset'" />
                         <div class="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-3xl pointer-events-none">
                         </div>
@@ -404,7 +418,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div
                     class="group bg-white border border-primary/20 rounded-3xl p-10 flex flex-col justify-between min-h-[440px] shadow-[0_5px_20px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_35px_rgba(185,166,25,0.25)] hover:border-primary transition-all duration-500 hover:-translate-y-3">
                     <div>
@@ -433,7 +447,7 @@
                             class="w-14 h-14 mb-8 flex items-center justify-center rounded-xl bg-gradient-to-br from-primary/50 to-primary/10 transition-all duration-500 group-hover:scale-110">
                             <span class="material-symbols-outlined text-primary-dim text-4xl">model_training</span>
                         </div>
-                        <h3 class="text-2xl font-serif mb-4 text-text-main">Leadership Dev</h3>
+                        <h3 class="text-2xl font-serif mb-4 text-text-main">Leadership Development</h3>
                         <p class="text-text-muted text-sm leading-relaxed">Teaching leaders how to absorb pressure daily
                             so their teams don't collapse under it, balancing empathy with strict accountability.</p>
                     </div>
@@ -464,29 +478,8 @@
                             class="material-symbols-outlined text-xl -rotate-[30deg] translate-y-1 group-hover:translate-x-2 group-hover:translate-y-2">arrow_downward</span>
                     </a>
                 </div>
-
-                <div
-                    class="group bg-white border border-primary/20 rounded-3xl p-10 flex flex-col justify-between min-h-[440px] shadow-[0_5px_20px_rgba(45,55,72,0.05)] hover:shadow-[0_15px_35px_rgba(185,166,25,0.25)] hover:border-primary transition-all duration-500 hover:-translate-y-3">
-                    <div>
-                        <div
-                            class="w-14 h-14 mb-8 flex items-center justify-center rounded-xl bg-gradient-to-br from-primary/50 to-primary/10 transition-all duration-500 group-hover:scale-110">
-                            <span class="material-symbols-outlined text-primary-dim text-4xl">support_agent</span>
-                        </div>
-                        <h3 class="text-2xl font-serif mb-4 text-text-main">Emotional Support</h3>
-                        <p class="text-text-muted text-sm leading-relaxed">Acting as your "Emotional Support Gorilla"
-                            🦍—providing the real, unfiltered support and venting space retail leaders desperately need.
-                        </p>
-                    </div>
-                    <a href="#contact"
-                        class="inline-flex mt-8 text-primary-dim font-bold items-center gap-2 group-hover:translate-x-1 transition-all duration-300">
-                        Let's talk
-                        <span
-                            class="material-symbols-outlined text-xl -rotate-[30deg] translate-y-1 group-hover:translate-x-2 group-hover:translate-y-2">arrow_downward</span>
-                    </a>
-                </div>
             </div>
         </section>
-
         <section id="origin"
             class="max-w-screen-2xl mx-auto px-6 md:px-12 py-24 flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div class="space-y-6 order-2 lg:order-1 animate-fade-up">
@@ -736,19 +729,31 @@
             const form = document.getElementById('contactForm');
             const successMsg = document.getElementById('successMessage');
 
+            // Show loading state
             btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-xl">progress_activity</span> Sending...';
             btn.disabled = true;
             btn.classList.add('opacity-80', 'cursor-not-allowed');
 
-            setTimeout(() => {
-                form.style.opacity = '0';
+            // EMAILJS SEND FUNCTION
+            // Template ID corrected (Zero '0' instead of capital 'O')
+            emailjs.sendForm('service_ywh0tam', 'template_0ndlhfm', this)
+                .then(() => {
+                    // Success hone par form hide aur success message show karega
+                    form.style.opacity = '0';
+                    setTimeout(() => {
+                        form.classList.add('hidden');
+                        successMsg.classList.remove('hidden');
+                    }, 300);
+                }, (error) => {
+                    // Fail hone par console mein error aur alert dega
+                    console.log('FAILED...', error);
+                    alert('Oops! Something went wrong. Please try again.');
 
-                setTimeout(() => {
-                    form.classList.add('hidden');
-                    successMsg.classList.remove('hidden');
-                }, 300);
-
-            }, 1500);
+                    // Button ko wapis normal kardo
+                    btn.innerHTML = '<span>Send Message</span>';
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-80', 'cursor-not-allowed');
+                });
         });
 
         function resetForm() {
